@@ -16,50 +16,51 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-
-  <header id="home" class="full">
-    <div class="hero">
-      <div class="brand">
-        <a href="/"><img src="/img/logo.png" alt="Web Afternoon"></a>
+  <div class="container">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="row masthead">
+      <div class="12 columns">
+        <h1>Web Afternoon</h1>
+        <h2>Design Edition</h2>
+        <p class="leader"><span class="detail">February 26th &mdash; 1-6pm</span> <span class="separator">&middot;</span> <span class="detail">The Garage at Tech Square</span> <span class="separator">&middot;</span> <span class="detail">Atlanta, GA</span></p>
+        <a class="register-button" href="#tickets">Get My Tickets</a>
       </div>
-      <div class="message">
-        <h1>The Event for People Who Love the Web</h1>
-        <h2>{{ site.data.event-info.date | date: "%b. %-d, %Y"  }} &#8226; {{site.data.event-info.venue-name }} &#8226; {{ site.data.event-info.city }}</h2>
-      </div>
-      <div class="cta">
-        <a class="btn btn-primary btn-lg" href="/#tickets">Get Your Tickets Here</a>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <section id="content">
-    <div class="container">
-
-      {{ content }}
-
-    </div>
-  </section>
 
   <footer>
     <div class="container">
       <div class="row">
-        <div class="span12">
-          <nav>
-            <a href="/sponsor/">Become a Sponsor</a><span> | </span><a href="/host/">Host an Event</a><span> | </span><a href="/code-of-conduct/">Code of Conduct</a>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="copyright">
-          <a href="/"><img src="/img/logo-small.png" title="Web Afternoon"></a>
-          <p>Web Afternoon is brought to you by <a href="http://ninelabs.com">Nine Labs</a> and the <a href="http://www.awdg.org">Atlanta Web Design Group</a>. &copy {{ site.time | date: "%Y" }} All Rights Reserved</p>
+        <div class="twelve columns">
+          <h5>Web Afternoon is Brought To You By:</h5>
+          <a href="https://ninelabs.com" target="_blank"><img class="nllogo" src="img/ninelabs_white.png" alt="Nine Labs"></a>
+          <p>Nine Labs is a first-class digital design agency based in Atlanta, GA, that focuses on helping clients bring their ideas to life and achieve their business goals. They specialize in strategy and planning, creative and experience design, and digital marketing strategy.</p>
+          <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Web Afternoon | All Rights Reserved</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-48977047-6', 'auto');
+    ga('send', 'pageview');
+  </script>
 
 </body>
+
 </html>
