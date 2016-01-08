@@ -1,5 +1,5 @@
 name: Web Afternoon
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 permalink: /:categories/:title.html
