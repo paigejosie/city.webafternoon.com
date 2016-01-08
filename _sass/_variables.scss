@@ -2,19 +2,33 @@
 // Variables
 //////////////////////////
 
-$brand-primary: #F3480F;
-$brand-secondary: #3878B9;
-$link-color: #3878b9;
-$link-hover-color: darken($link-color, 20%);
 
-$facebook-link-color: #3B5998;
-$twitter-link-color: #00ACED;
-$website-link-color: #E6300A;
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
 
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
 
-//////////////////////////
 // Typography
+$font-family: "futura-pt-1","futura-pt-2",sans-serif !default;
 
-$font-family-sans-serif: "proxima-nova-1","proxima-nova-2","Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: "adelle-1","adelle-2",georgia,serif;
-$font-size-base: 16px;
+//Grid Variables
+$container-width: 800px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;

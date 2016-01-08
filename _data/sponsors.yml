@@ -1,7 +1,11 @@
-- name: MailChimp
-  url: www.mailchimp.com
+- name: The Sandbox
+  url: http://www.sandboxcrew.com/
   image: mailchimp.png
 
-- name: Adobe
-  url: www.adobe.com
+- name: Strongbox West
+  url: whttp://www.strongboxwest.com/
+  image: adobe.png
+
+- name: Sync Synergis Creative
+  url: http://www.synergiscreative.com/
   image: adobe.png
